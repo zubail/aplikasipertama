@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AplikasiPertamm</string>
+
+    <string name="hello_world">hello world! by Zubaili Isfarizky </string>
+    <string name="apakabar_dunia">apa kabar dunia! dari Zubaili Isfarizky </string>
+    <string name="tombol_terjemah">Terjemahkan</string>
+    <string name="action_settings">Settings</string>
+</resources>
