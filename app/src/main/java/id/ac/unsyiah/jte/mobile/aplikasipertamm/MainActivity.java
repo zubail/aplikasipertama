@@ -38,11 +38,21 @@ public class MainActivity extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void onClickTombolTerjemah(View view) {
+    public void onCLickTombolTerjemahan(View view) {
         TextView txtTulisan = (TextView) findViewById(R.id.txtTulisan);
-        String apakabar = getString(R.string.apakabar_dunia);
-        txtTulisan.setText(apakabar);
+        if (bahasaIndonesia == false) {
+            String apakabar = getString(R.string.apakabar_dunia);
+            txtTulisan.setText(apakabar);
+            bahasaIndonesia = true;
+        }
 
+        else {
+            String helloWord = getString(R.string.hello_world);
+            txtTulisan.setText(helloWord);
+            bahasaIndonesia = false;
+        }
     }
+
+    private boolean bahasaIndonesia = false;
 
 }
